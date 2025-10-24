@@ -3,7 +3,6 @@
 Repositório de infraestrutura como código (IaC) utilizando **Terraform** para provisionar e gerenciar recursos na **AWS**. O objetivo é construir uma **infraestrutura modular e reutilizável**, onde cada stack representa um conjunto de recursos independentes (rede, EKS, banco, monitoramento, etc).
 
 ```bash
-.
 ├── infra-modules/
 │   ├── networking/
 │   │   ├── variables.tf
