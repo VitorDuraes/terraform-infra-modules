@@ -3,7 +3,6 @@
 Repositório de infraestrutura como código (IaC) utilizando **Terraform** para provisionar e gerenciar recursos na **AWS**. O objetivo é construir uma **infraestrutura modular e reutilizável**, onde cada stack representa um conjunto de recursos independentes (rede, EKS, banco, monitoramento, etc).
 
 ```bash
-.
 ├── infra-modules/
 │   ├── networking/
 │   │   ├── variables.tf
@@ -86,7 +85,7 @@ region = var.aws_region
 # 1. Módulo de Rede
 
 module "networking" {
-source = "git::https://github.com/seu-usuario/terraform-infra-modules.git//infra-modules/networking"
+source = "git::https://github.com/VitorDuraes/terraform-infra-modules.git//infra-modules/networking"
 
 # (ou use o caminho local, ex: "./terraform-infra-modules/infra-modules/networking")
 
@@ -98,7 +97,7 @@ project_name = var.project_name
 # 2. Módulo do EKS
 
 module "eks_cluster" {
-source = "git::https://github.com/seu-usuario/terraform-infra-modules.git//infra-modules/eks-cluster"
+source = "git::https://github.com/VitorDuraes/terraform-infra-modules.git//infra-modules/eks-cluster"
 
 cluster_name = var.cluster_name
 vpc_id = module.networking.vpc_id
