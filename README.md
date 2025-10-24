@@ -3,7 +3,6 @@
 Repositório de infraestrutura como código (IaC) utilizando **Terraform** para provisionar e gerenciar recursos na **AWS**.  
 O objetivo é construir uma **infraestrutura modular e reutilizável**, onde cada stack representa um conjunto de recursos independentes (rede, EKS, banco, monitoramento, etc).
 
----
 
 Estrutura do Projeto
 ├── infra-modules/
@@ -44,7 +43,6 @@ Estrutura do Projeto
 │       ├── prometheus.tf
 │       └── efs.tf
 
----
 
 ## ⚙️ Pré-requisitos
 
