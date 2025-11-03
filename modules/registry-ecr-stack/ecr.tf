@@ -3,7 +3,7 @@ resource "aws_ecr_repository" "this" {
 
   name = var.nomes_repositorios[count.index]
 
-  image_tag_mutability = abs("Mutable") # ou "Immutable"
+  image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
     scan_on_push = true

@@ -1,10 +1,10 @@
 resource "aws_security_group" "default" {
   name        = "${local.nome_ambiente}-sg-default"
-  description = "SG Padrão: permite toda comunicação interna na VPC"
+  description = "SG Padrao: permite toda comunicacao interna na VPC"
   vpc_id      = aws_vpc.this.id
 
   ingress {
-    description      = "Permitir todo o tráfego interno na VPC"
+    description      = "Permitir todo o trafego interno na VPC"
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
@@ -13,7 +13,7 @@ resource "aws_security_group" "default" {
   }
 
   egress {
-    description = "Permitir todo o tráfego de saída"
+    description = "Permitir todo o trafego de saida"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
